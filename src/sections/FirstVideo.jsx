@@ -7,7 +7,7 @@ export const FirstVideo = () => {
 
 
     useGSAP(() => {
-      gsap.to('first-vd-wrapper',{marginTop:'-150vh', opacity:0})
+      gsap.set('.first-vd-wrapper',{marginTop:'-150vh', opacity:0})
 
       const tl = gsap.timeline({
         scrollTrigger:{
